@@ -1,0 +1,26 @@
+<div ng-controller="changeYearCtrl">
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+<link rel="stylesheet" href="fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+
+
+	<h3>Galerija</h3>
+	<hr>
+	<a ng-class="{ activeYear: year == '1990', imgGallery: !is1990 }" class="imgGallery" href="#/galerija/1990">1990</a>
+	<a ng-class="{ activeYear: is1992, imgGallery: !is1992 }" class="imgGallery" href="#/galerija/1992">1992</a>
+	<a ng-class="{ activeYear: is1995, imgGallery: !is1995 }" class="imgGallery" href="#/galerija/1995">1995</a>
+	<a ng-class="{ activeYear: is1996, imgGallery: !is1996 }" class="imgGallery" href="#/galerija/1996">1996</a>
+	<a ng-class="{ activeYear: is2001, imgGallery: !is2001 }" class="imgGallery" href="#/galerija/2001">2001</a>
+	<a ng-class="{ activeYear: is2002, imgGallery: !is2002 }" class="imgGallery" href="#/galerija/2002">2002</a>
+	<a ng-class="{ activeYear: is2003, imgGallery: !is2003 }" class="imgGallery" href="#/galerija/2003">2003</a>
+	<a ng-class="{ activeYear: is2005, imgGallery: !is2005 }" class="imgGallery" href="#/galerija/2005">2005</a>
+	<a ng-class="{ activeYear: is2007, imgGallery: !is2007 }" class="imgGallery" href="#/galerija/2007">2007</a>
+	<a ng-class="{ activeYear: is2008, imgGallery: !is2008 }" class="imgGallery" href="#/galerija/2008">2008</a>
+	<a ng-class="{ activeYear: is2011, imgGallery: !is2011 }" class="imgGallery" href="#/galerija/2011">2011</a>
+	<a ng-class="{ activeYear: is2015, imgGallery: !is2015 }" class="imgGallery" href="#/galerija/2015">2015</a>
+	<hr>
+
+	<div ng-include="getInclude()">
+	</div>
+
+</div>

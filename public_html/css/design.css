@@ -1,0 +1,114 @@
+/*
+Fonts
+*/
+@import url('https://fonts.googleapis.com/css?family=Share:700');
+@font-face {
+    font-family: take;
+    src: url("TAKE____.TTF");
+    font-weight: bold;
+}
+body
+{
+	background-image: url("ki.png"), url("cltextures-large-paper-rice-paper-unryuu-heavy-medium.jpg");
+	background-position: left top, left top;
+    background-repeat: no-repeat, repeat;
+	margin-left: auto;
+	margin-right: auto;
+	width: 60%;
+}
+
+h1
+{
+	font-family: take;
+	font-size: 60px;
+}
+h2
+{
+	font-family: take;
+	font-size: 55px;
+}
+h3
+{
+	font-family: take;
+	font-size: 45px;
+}
+h4
+{
+	font-family: take;
+	font-size: 40px;
+	margin-bottom: 0;
+}
+ul#nav
+{
+	list-style-type:none;
+	margin: 0;
+	padding: 0;
+}
+ul#nav > li
+{
+	border-style: dotted;
+	border-width: 1px 1px 1px 1px;
+	font-size: 40px;
+	width: 200px;
+	display: inline-block;
+}
+a
+{
+	text-decoration: none;
+}
+.link
+{
+	background-color: red;
+	padding-left: 45px;
+	font-family: take;
+	color: black;
+}
+.link:hover
+{
+	background-image: url("ki.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	color: white;
+}
+
+/*
+*	Instructors page
+*/
+ul#instructors > li
+{
+	background-image: url("ki.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	list-style-type:none;
+	padding: 0 0 0 2%;
+}
+/*
+*	Gallery
+*/
+a.imgGallery,a.imgGallery:VISITED
+{
+	margin-left: 20px;
+	text-decoration:none;
+	font-size: 50px;
+	font-family: take;
+	color:black;
+}
+a.imgGallery:HOVER
+{
+	color:#3333FF;
+}
+a.activeYear,a.activeYear:VISITED
+{
+	margin-left: 20px;
+	text-decoration:none;
+	font-size: 50px;
+	font-family: take;
+	color:#CC0000;
+	border-color:black;
+	border-style: solid;
+}
+.thumb
+{
+	width:100px;
+	height:100px;
+}

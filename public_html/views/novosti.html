@@ -1,0 +1,18 @@
+<html>
+    <head></head>
+    <body>
+	<header>
+		<h2>Novosti<h2>
+		<hr>
+	</header>
+	
+	<article ng-repeat="article in articles">
+		<h3>{{article.title}}</h3>
+		<div>
+		{{article.text}} <br>
+		{{article.date}} <br>
+		</div>
+	</article>
+		
+    </body>
+</html>

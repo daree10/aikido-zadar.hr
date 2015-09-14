@@ -1,0 +1,4 @@
+#DirectoryIndex pocetna
+#Options +FollowSymlinks
+#RewriteEngine on
+#RewriteRule pocetna index.html [nc,qsa]
