@@ -1,7 +1,8 @@
 ﻿var app = angular.module("aikiApp", ['ngRoute']);
-
-app.config(function($routeProvider)
+app.config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) 
 {
+	$locationProvider.hashPrefix('!');
+	
 	$routeProvider
 		.when( '/novosti', { templateUrl: 'views/novosti.html' } )
 		.when('/instruktori', { templateUrl: 'views/instruktori.html' })
@@ -11,7 +12,7 @@ app.config(function($routeProvider)
 		.when('/galerija', { templateUrl: 'views/gal.html' })
 		.when('/galerija/:year', { controller: 'changeYearCtrl', templateUrl: 'views/gal.html' })
 		.otherwise( { redirectTo: '/novosti' } );
-});	
+}]);	
 /*
 app.controller("newsCtrl", [ '$scope','$route','$routeParams', function($scope,$route,$routeParams) {
 

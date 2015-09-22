@@ -1,4 +1,4 @@
-#DirectoryIndex pocetna
-#Options +FollowSymlinks
-#RewriteEngine on
-#RewriteRule pocetna index.html [nc,qsa]
+RewriteEngine On
+RewriteCond %{REQUEST_URI}  ^/$
+RewriteCond %{QUERY_STRING} ^_escaped_fragment_=/?(.*)$
+RewriteRule ^(.*)$ /snapshots/%1? [NC,L]
