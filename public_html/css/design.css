@@ -1,12 +1,17 @@
 /*
-Fonts
+*Fonts
 */
-@import url('https://fonts.googleapis.com/css?family=Share:700');
+@import url(https://fonts.googleapis.com/css?family=Play&subset=latin-ext,latin);
 @font-face {
     font-family: take;
     src: url("TAKE____.TTF");
     font-weight: bold;
 }
+@font-face {
+    font-family: leap;
+    src: url("Leap of Faith.ttf");
+}
+
 body
 {
 	background-image: url("ki.png"), url("cltextures-large-paper-rice-paper-unryuu-heavy-medium.jpg");
@@ -16,7 +21,11 @@ body
 	margin-right: auto;
 	width: 60%;
 }
-
+p
+{
+	font-family: play;
+	font-weight: normal;
+}
 h1
 {
 	font-family: take;
@@ -29,13 +38,9 @@ h2
 }
 h3
 {
-	font-family: take;
+	font-family: leap;
 	font-size: 45px;
-}
-h4
-{
-	font-family: take;
-	font-size: 40px;
+	font-weight:normal;
 	margin-bottom: 0;
 }
 ul#nav
@@ -48,7 +53,7 @@ ul#nav > li
 {
 	border-style: dotted;
 	border-width: 1px 1px 1px 1px;
-	font-size: 40px;
+	font-size: 30px;
 	width: 200px;
 	display: inline-block;
 }
@@ -59,8 +64,8 @@ a
 .link
 {
 	background-color: red;
-	padding-left: 45px;
-	font-family: take;
+	padding-left: 60px;
+	font-family: leap;
 	color: black;
 }
 .link:hover
@@ -72,8 +77,21 @@ a
 }
 
 /*
-*	Instructors page
+*News page
 */
+.articles
+{
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	border-style: solid;
+	border-width: 2px 2px 2px 2px;
+	margin-bottom: 10px;
+	border-color: #FE2E2E;
+}
+/*
+*	Instructors page
+*
 ul#instructors > li
 {
 	background-image: url("ki.png");
@@ -82,7 +100,7 @@ ul#instructors > li
 	list-style-type:none;
 	padding: 0 0 0 2%;
 }
-/*
+*
 *	Gallery
 */
 a.imgGallery,a.imgGallery:VISITED
@@ -104,8 +122,6 @@ a.activeYear,a.activeYear:VISITED
 	font-size: 50px;
 	font-family: take;
 	color:#CC0000;
-	border-color:black;
-	border-style: solid;
 }
 .thumb
 {

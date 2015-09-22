@@ -2,19 +2,60 @@
 <head>
 </head>
 <body>
-<h3>Treninzi</h3>
-<h4>Aikido</h4>
-Medicinska škola A.Kuzmanića
-<br>
-Ponedjeljkom, utorkom, četvrtkom - od 19:30 do 21:00
-<br>
+<h2>Treninzi</h2>
+<p style='font-weight:bold;font-size:30px;'>Kontakt</p>
+<p>Nenad Vertovšek: <span style='font-weight:bold;'> (00 385) 091 33 7777 6 </span></p>
+<p>Vesna Vertovšek: <span style='font-weight:bold;'> (00 385) 091 512 65 87 </span></p>
+<h3>Aikido</h3>
+<p>Ponedjeljkom, utorkom, četvrtkom - od 19:30 do 21:00</p>
+<p>Medicinska škola A.Kuzmanića, Ul. dr. Franje Tuđmana 24G / 23 000 Zadar</p>
+
+<div class='maps'>
+	<iframe style='pointer-events: none;' width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJmQPNX2P6YUcRNhq78ePXIIs&maptype=satellite&key=AIzaSyB4__J9z5JMrKBEi9H6f6dMen_CUFE0aPs" allowfullscreen>
+	</iframe>
+</div>
 
 <hr>
-<h4> Tai Chi Chuan</h4>
-Hangar iznad Medicinske i Glazbene škole
-<br>
-Utorkom i četvrtkom - od 18:00 do 19:00
-<br>
-<img style = "width:200px;height:200px;" src="img/trening.jpg" title="aikido" alt="aikido"/>
+<h3>Tai Chi Chuan</h3>
+<p>Utorkom i četvrtkom - od 18:00 do 19:00</p>
+<p>Hangar iznad Medicinske i Glazbene škole</p>
+<div id="map" style="height:450px;width:600px;"></div>
+
+<script>
+$('.maps').click(function () {
+    $('.maps iframe').css("pointer-events", "auto");
+});
+$('.maps').mouseleave(function() { 
+	$('.maps iframe').css("pointer-events", "none"); 
+});
+
+var map;
+function initMap() {
+  map = new google.maps.Map(document.getElementById('map'), {
+    center: {lat: 44.1149591, lng: 15.2389925},
+	mapTypeId: google.maps.MapTypeId.HYBRID,
+	scrollwheel: false,
+    zoom: 17
+  });
+  
+  var infowindow = new google.maps.InfoWindow({
+    content: "Hangar iznad Medicinske i Glazbene škole"
+  });
+  
+  var infowindowSkola = new google.maps.InfoWindow({
+    content: "Medicinska škola Ante Kuzmanovića"
+  });
+  
+  var marker = new google.maps.Marker({
+    position: {lat: 44.115280, lng: 15.239250},
+    map: map,
+	title: 'Hangar'
+  });
+  
+  infowindow.open(map,marker);
+}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB4__J9z5JMrKBEi9H6f6dMen_CUFE0aPs&callback=initMap"
+        async defer></script>
 </body>
 </html>
