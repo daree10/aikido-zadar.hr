@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<title>Aikido klub Zadar | Aikido dojo Zadar</title>
+        
+		<meta name='keywords' content='aikido, zadar, ki, klub, hrvatska'>
+		<meta name='author' content='aikido, klub, zadar'>
+		<meta name='description' content='Aikido klub Zadar, Hrvatska, Ki Aikido'>
+		
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="UTF-8">
+        <link rel="icon" type="image/png" href="css/ki.png">
+		
+		<link rel="stylesheet" type="text/css" href="css/design.css">
+		
+		<script type='text/javascript'>
+			location.replace("angular/#!/treninzi");
+		</script>
+    </head>
+    <body>
+	
+	<!-- nav aikido klub zadar, same for every page -->
+	
+	<h1>Aikido Dojo Zadar</h1>
+	
+	<nav>
+		<ul id="nav">
+			<li>
+				<a href='/pocetna'>
+					<div class = 'link'>
+						Novosti
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href='/aikido-treninzi'>
+					<div class = 'link'>
+						Treninzi
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href='povijest-aikido-zadar'>
+					<div class = 'link'>
+						Povijest
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href='/aikido-instruktori'>
+					<div class = 'link'>
+						Instruktori
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href='/galerija-aikido-klub-zadar'>
+					<div class = 'link'>
+						Galerija
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href='/kontakt'>
+					<div class = 'link'>
+						Linkovi
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href='/linkovi'>
+					<div class = 'link'>
+						Linkovi
+					</div>
+				</a>
+			</li>
+		</ul>
+	</nav>
+	
+	<!-- aikido tai chi chuan klub zadar treninzi -->
+	
+	<h2>Treninzi</h2>
+<p style='font-weight:bold;font-size:30px;'>Kontakt</p>
+<p>Nenad Vertovšek: <span style='font-weight:bold;'> (00 385) 091 33 7777 6 </span></p>
+<p>Vesna Vertovšek: <span style='font-weight:bold;'> (00 385) 091 512 65 87 </span></p>
+<h3>Aikido</h3>
+<p>Ponedjeljkom, utorkom, četvrtkom - od 19:30 do 21:00</p>
+<p>Medicinska škola A.Kuzmanića, Ul. dr. Franje Tuđmana 24G / 23 000 Zadar</p>
+
+<a href='https://www.google.com/maps/place/Medicinska+%C5%A1kola+Ante+Kuzmanovi%C4%87,+23000,+Zadar,+Hrvatska/@44.11385,15.237296,1636m/data=!3m1!1e3!4m2!3m1!1s0x4761fa635fcd0399:0x8b20d7e3f1bb1a36?hl=hr-Hr'>
+	<img style="width:600px;height:450px" src="aikido-location.PNG" alt='Lokacija treninga aikido klub zadar' title='Aikido klub Zadar, treninzi'/>
+</a>
+
+<hr>
+<h3>Tai Chi Chuan</h3>
+<p>Utorkom i četvrtkom - od 18:00 do 19:00</p>
+<p>Hangar iznad Medicinske i Glazbene škole</p>
+<div id="map" style="height:450px;width:600px;"></div>
+
+<script >
+$('.maps').click(function () {
+    $('.maps iframe').css("pointer-events", "auto");
+});
+$('.maps').mouseleave(function() { 
+	$('.maps iframe').css("pointer-events", "none"); 
+});
+
+var map;
+function initMap() {
+  map = new google.maps.Map(document.getElementById('map'), {
+    center: {lat: 44.1149591, lng: 15.2389925},
+	mapTypeId: google.maps.MapTypeId.HYBRID,
+	scrollwheel: false,
+    zoom: 17
+  });
+  
+  var infowindow = new google.maps.InfoWindow({
+    content: "Hangar iznad Medicinske i Glazbene škole"
+  });
+  
+  var infowindowSkola = new google.maps.InfoWindow({
+    content: "Medicinska škola Ante Kuzmanovića"
+  });
+  
+  var marker = new google.maps.Marker({
+    position: {lat: 44.115280, lng: 15.239250},
+    map: map,
+	title: 'Hangar'
+  });
+  
+  infowindow.open(map,marker);
+}
+</script>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB4__J9z5JMrKBEi9H6f6dMen_CUFE0aPs&callback=initMap"></script>
+</body>
+</html>
