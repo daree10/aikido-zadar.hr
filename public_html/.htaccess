@@ -6,9 +6,21 @@ RewriteEngine On
 #RewriteRule ^(.*)$ snapshots/snaps.php?snap=%1 [NC,QSA]
 
 RewriteRule pocetna pocetna.html
-RewriteRule treninzi treninzi.html
-RewriteRule povijest-aikido-zadar povijest.html
-RewriteRule aikido-instruktori instruktori.html
-RewriteRule galerija-aikido-klub-zadar galerija.html
+RewriteRule treninzi-aikido-tai-chi aikido-tai-chi-chuan-treninzi.html
+RewriteRule povijest-aikido-zadar povijest-aikido-zadar.html
+RewriteRule instruktori-aikido-tai-chi tai-chi-aikido-instruktori.html
 RewriteRule kontakt kontakt.html
 RewriteRule linkovi linkovi.html
+#galerija
+RewriteRule galerija-aikido-klub-zadar-2015 2015-aikido-klub-zadar-galerija.html
+RewriteRule galerija-aikido-klub-zadar-2011 2011-aikido-klub-zadar-galerija.html
+RewriteRule galerija-aikido-klub-zadar-2008 2008-aikido-klub-zadar-galerija.html
+RewriteRule galerija-aikido-klub-zadar-2007 2007-aikido-klub-zadar-galerija.html
+RewriteRule galerija-aikido-klub-zadar-2005 2005-aikido-klub-zadar-galerija.html
+RewriteRule galerija-aikido-klub-zadar-2003 2003-aikido-klub-zadar-galerija.html
+RewriteRule galerija-aikido-klub-zadar-2002 2002-aikido-klub-zadar-galerija.html
+RewriteRule galerija-aikido-klub-zadar-2001 2001-aikido-klub-zadar-galerija.html
+RewriteRule galerija-aikido-klub-zadar-1996 1996-aikido-klub-zadar-galerija.html
+RewriteRule galerija-aikido-klub-zadar-1995 1995-aikido-klub-zadar-galerija.html
+RewriteRule galerija-aikido-klub-zadar-1992 1992-aikido-klub-zadar-galerija.html
+RewriteRule galerija-aikido-klub-zadar-1990 1990-aikido-klub-zadar-galerija.html
