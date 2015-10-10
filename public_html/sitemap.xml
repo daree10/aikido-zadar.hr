@@ -4,35 +4,36 @@
   <loc>http://www.aikido-zadar.hr</loc>
   <lastmod>2015-09-21T19:23:29+00:00</lastmod>
   <changefreq>monthly</changefreq>
+  <priority>1.00</priority>
 </url>
 <url>
-  <loc>http://www.aikido-zadar.hr/aikido-treninzi</loc>
+  <loc>http://www.aikido-zadar.hr/treninzi-aikido-tai-chi</loc>
   <lastmod>2015-09-21T19:23:29+00:00</lastmod>
   <changefreq>monthly</changefreq>
+  <priority>1.00</priority>
 </url>
 <url>
   <loc>http://www.aikido-zadar.hr/povijest-aikido-zadar</loc>
   <lastmod>2015-09-21T19:23:29+00:00</lastmod>
   <changefreq>monthly</changefreq>
+  <priority>0.90</priority>
 </url>
 <url>
-  <loc>http://www.aikido-zadar.hr/aikido-instruktori</loc>
+  <loc>http://www.aikido-zadar.hr/instruktori-aikido-tai-chi</loc>
   <lastmod>2015-09-21T19:23:29+00:00</lastmod>
   <changefreq>monthly</changefreq>
+  <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://www.aikido-zadar.hr/galerija-aikido-klub-zadar</loc>
+  <loc>http://www.aikido-zadar.hr/aikido-klub-zadar-galerija-2015</loc>
   <lastmod>2015-09-21T19:23:29+00:00</lastmod>
   <changefreq>monthly</changefreq>
+  <priority>0.90</priority>
 </url>
 <url>
-  <loc>http://www.aikido-zadar.hr/kontakt</loc>
+  <loc>http://www.aikido-zadar.hr/aikido-zadar-linkovi</loc>
   <lastmod>2015-09-21T19:23:29+00:00</lastmod>
   <changefreq>monthly</changefreq>
-</url>
-<url>
-  <loc>http://www.aikido-zadar.hr/linkovi</loc>
-  <lastmod>2015-09-21T19:23:29+00:00</lastmod>
-  <changefreq>monthly</changefreq>
+  <priority>0.90</priority>
 </url>
 </urlset>
