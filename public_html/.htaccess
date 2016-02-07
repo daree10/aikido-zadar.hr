@@ -1,11 +1,8 @@
 DirectoryIndex pocetna.html
 RewriteEngine On
 
-#RewriteCond %{REQUEST_URI}  ^\/$
-#RewriteCond %{QUERY_STRING} ^_escaped_fragment_=(.*)$
-#RewriteRule ^(.*)$ snapshots/snaps.php?snap=%1 [NC,QSA]
-
 RewriteRule pocetna pocetna.html
+RewriteRule index index.html
 RewriteRule treninzi-aikido-tai-chi aikido-tai-chi-chuan-treninzi.html
 RewriteRule povijest-aikido-zadar povijest-aikido-zadar.html
 RewriteRule instruktori-aikido-tai-chi tai-chi-aikido-instruktori.html

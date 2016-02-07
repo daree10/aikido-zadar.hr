@@ -5,8 +5,22 @@
 		<h2>Novosti<h2>
 		<hr>
 	</header>
-	
+	  <script>
+	  
+$(document).ready(function(){
+
+var articlesNumber = $('article.articles').length;
+console.log(articlesNumber);
+var delay = 0;
+$('article.articles:lt('+articlesNumber+')').each(function(){
+	//$(this).css("display","block")
+    $(this).delay(delay).fadeIn(3000);
+    delay += 600;
+});
+});
+</script>
 	<article class='articles'>
+
 		<h3 style='margin-left:10px'>Aikido klub Zadar na Danu otvorenih vrata</h3>
 		<div>
 		<p style='margin-left:10px;margin-right:10px;'>
@@ -14,7 +28,7 @@
 		<br><br>
 		Pučko otvoreno učilište Erudio iz Zadra, kao regionalni koordinator tradicionalno organizira Sajam obrazovanja, koji će se održati 29.rujna 2015. s početkom u 10.00 h, na Narodnom trgu u Zadru.
 
-Na sajmu će uz POU Erudio sudjelovati još i Aikido klub Zadar, Autoškola ZADAR, CISOK Zadar, POU Libar iz Šibenika, POU Algebra, Udruga Mala filozofija iz Zadra.
+		Na sajmu će uz POU Erudio sudjelovati još i Aikido klub Zadar, Autoškola ZADAR, CISOK Zadar, POU Libar iz Šibenika, POU Algebra, Udruga Mala filozofija iz Zadra.
 <br><br>
 	<a target='_blank' href='http://www.cjelozivotno-ucenje.hr/dogadjanja/zadarska-zupanija/novo-doga%C4%91anje-(2).aspx'>Najava događaja</a>
  
@@ -27,8 +41,8 @@ Na sajmu će uz POU Erudio sudjelovati još i Aikido klub Zadar, Autoškola ZADA
 	
 	<article class='articles'>
 		<h3 style='margin-left:10px'>Aikido</h3>
-		<div>
-		<p style='margin-left:10px;margin-right:10px;'>
+
+		<p style='margin-left:10px;margin-right:10px;'
 		NOVA SEZONA AIKIDO TRENINGA
 		<br><br>
 		Svim starim i novim članovima i vježbačima Aikida i Tai Chi Chuana želimo ugodan početak nove sezone treninga. Treninzi za stare članove i zainteresirane građane i nove vježbače počinju u četvrtak 1. listopada 2015. u 19,30 sati u dvorani zadarske Medicinske škole. Treninzi će se održavati ponedjeljkom, utorkom i četvrtkom od 19:30 do 21:00. u dvorani Medicinske škole, a po dogovoru i u hangaru Aikido kluba Zadar u sklopu sportskog centra „Franko Lisica“ iznad Glazbene i Medicinske škole. Upisi za nove članove počinju s prvim treninzima.
@@ -44,10 +58,8 @@ Na sajmu će uz POU Erudio sudjelovati još i Aikido klub Zadar, Autoškola ZADA
 		</p>
 		<hr>
 		<p style='margin-left:10px;'>20. rujna 2015.</p>
-		</div>
 	
 	</article>
-	
 	<article class='articles'>
 		<h3 style='margin-left:10px'>Tai Chi Chuan</h3>
 		<div>
@@ -71,6 +83,5 @@ Na sajmu će uz POU Erudio sudjelovati još i Aikido klub Zadar, Autoškola ZADA
 		</div>
 	
 	</article>
-		
     </body>
 </html>

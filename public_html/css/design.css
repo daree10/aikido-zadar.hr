@@ -11,7 +11,9 @@
     font-family: leap;
     src: url("Leap of Faith.ttf");
 }
-
+html {
+  overflow-y: scroll;
+}
 body
 {
 	background-image: url("ki.png"), url("cltextures-large-paper-rice-paper-unryuu-heavy-medium.jpg");
@@ -19,7 +21,7 @@ body
     background-repeat: no-repeat, repeat;
 	margin-left: auto;
 	margin-right: auto;
-	width: 60%;
+	width: 70%;
 }
 p
 {
@@ -88,6 +90,8 @@ a
 	border-width: 2px 2px 2px 2px;
 	margin-bottom: 10px;
 	border-color: #FE2E2E;
+
+	display:none;
 }
 /*
 *	Instructors page
