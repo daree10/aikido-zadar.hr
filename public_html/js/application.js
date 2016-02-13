@@ -28,6 +28,7 @@ app.controller("changeYearCtrl", [ '$scope','$route','$routeParams', function($s
 						var is2008 = ($routeParams.year == "2008");
 						var is2011 = ($routeParams.year == "2011");
 						var is2015 = ($routeParams.year == "2015");
+						var is2016 = ($routeParams.year == "2016");
 						
 						$scope.is1990 = is1990;
 						$scope.is1992 = is1992;
@@ -41,6 +42,7 @@ app.controller("changeYearCtrl", [ '$scope','$route','$routeParams', function($s
 						$scope.is2008 = is2008;
 						$scope.is2011 = is2011;
 						$scope.is2015 = is2015;
+						$scope.is2016 = is2016;
 						
 						$scope.year = $routeParams.year;
 						
