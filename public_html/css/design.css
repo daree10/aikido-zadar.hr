@@ -27,16 +27,17 @@ p
 {
 	font-family: play;
 	font-weight: normal;
+	font-size:24px;
 }
 h1
 {
 	font-family: take;
-	font-size: 60px;
+	font-size: 75px;
 }
 h2
 {
 	font-family: take;
-	font-size: 55px;
+	font-size: 65px;
 }
 h3
 {
@@ -81,6 +82,17 @@ a
 /*
 *News page
 */
+.responsive-image
+{
+    width: 80%;
+    height: auto;
+    max-width:480px;
+    max-height:320px;
+}
+.responsive-embed
+{
+    max-width:100%;
+}
 .articles
 {
 	-webkit-border-radius: 10px;
@@ -92,6 +104,30 @@ a
 	border-color: #FE2E2E;
 
 	display:none;
+}
+@media screen and (max-width: 980px) {
+	h1
+    {
+    	background-color:rgba(255,255,255,0.7);
+    }
+    body
+    {
+    	width:95%;
+    }
+}
+@media screen and (max-width: 580px) {
+    p
+    {
+    	font-size:14px;
+    }
+    h3
+    {
+    	font-size: 25px;
+    }
+    ul#nav > li
+	{
+		width:90%;
+	}
 }
 /*
 *	Instructors page
